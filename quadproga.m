@@ -1,4 +1,4 @@
-function [x,fval,time,logq,lb] = quadprogm(A,c,B,b,lb,ub)
+function [x,fval,time,logq,lb] = quadproga(A,c,B,b,lb,ub)
 %% [x,fval,time,logq] = quadprogbb(H,f,A,b,Aeq,beq,LB,UB,options)
 %
 % QUADPROGM globally solves the following nonconvex quadratic
