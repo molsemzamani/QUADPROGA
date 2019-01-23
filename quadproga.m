@@ -1,7 +1,6 @@
 function [x,fval,time,lb] = quadproga(Q,c,A,b)
 
-%% [x,fval,time,logq] = quadprogbb(H,f,A,b,Aeq,beq,LB,UB,options)
-%
+
 % QUADPROGM globally solves the following nonconvex quadratic
 % programming problem:
 %
@@ -12,7 +11,7 @@ function [x,fval,time,lb] = quadproga(Q,c,A,b)
 % x reurns optimal solution
 % fval reurns optimal value
 % time reurns implementation time
- % logq reurns nodes details
+
  
 tic;
 n=size(Q,1);
