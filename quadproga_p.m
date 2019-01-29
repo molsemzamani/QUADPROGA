@@ -12,7 +12,7 @@ function [x,fval,time,lb] = quadproga_p(Q,c,A,b)
 % x reurns optimal solution
 % fval reurns optimal value
 % time reurns implementation time
- % logq reurns nodes details
+% In this code we use parfor which implement loops parallelly
  
 tic;
 n=size(Q,1);
