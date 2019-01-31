@@ -1,8 +1,7 @@
 function [x,fval,time,lb] = quadproga_p(Q,c,A,b)
 
-%% [x,fval,time,logq] = quadprogbb(H,f,A,b,Aeq,beq,LB,UB,options)
 %
-% QUADPROGM globally solves the following nonconvex quadratic
+% QUADPROGM globally solves the following concave quadratic
 % programming problem:
 %
 %    min      x'*Q*x +2c'*x
@@ -12,7 +11,7 @@ function [x,fval,time,lb] = quadproga_p(Q,c,A,b)
 % x reurns optimal solution
 % fval reurns optimal value
 % time reurns implementation time
-% In this code we use parfor which implement loops parallelly
+% In this code we use parfor which implement loops parallelly, to use this code first turn on parallel pool on Matlab
  
 tic;
 n=size(Q,1);
