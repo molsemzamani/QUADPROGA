@@ -1,7 +1,7 @@
 function [x,fval,time,lb] = quadproga(Q,c,A,b)
 
 
-% QUADPROGM globally solves the following nonconvex quadratic
+% QUADPROGM globally solves the following concave quadratic
 % programming problem:
 %
 %    min      x'*Q*x +2c'*x
